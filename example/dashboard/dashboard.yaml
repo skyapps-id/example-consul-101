@@ -26,4 +26,4 @@ spec:
         - containerPort: 9002
         env:
         - name: COUNTING_SERVICE_URL
-          value: 'http://counting.service.consul:9001'
+          value: 'http://localhost:9001'
