@@ -13,7 +13,6 @@ spec:
     metadata:
       annotations:
         consul.hashicorp.com/connect-inject: 'true'
-        consul.hashicorp.com/connect-service-upstreams: 'counting:9001'
       labels:
         app: dashboard
     spec:
@@ -26,4 +25,4 @@ spec:
         - containerPort: 9002
         env:
         - name: COUNTING_SERVICE_URL
-          value: 'http://localhost:9001'
+          value: 'http://counting.service.dc1.consul:9001'
